@@ -1,0 +1,36 @@
+.nav-tab {
+	text-align: left;
+	margin-top: px(53);
+	border-bottom: px(1) solid #f0f0f0;
+	font-size: 0;
+	 
+	&-item {
+		@include pos(relative);
+		display: inline-block;
+		max-width: px(150);
+		line-height: 1;
+		padding: 0 px(15) px(18);
+		cursor: pointer;
+		
+		&.on {
+			&::after {
+				content: '';
+				display: inline-block;
+				@include pos(absolute,$r:0,$b:0);
+				width: 100%;
+				height: px(2);
+				background-color: #111111;
+			}
+			button {
+				font-weight: 400;
+				color: #222222;
+			}
+		}
+
+		button {
+			font-weight: 300;
+			font-size: px(18);
+			color: #484a4d;
+		}
+	}
+}

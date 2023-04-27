@@ -1,0 +1,208 @@
+@import 'module';
+
+[class*="icon-"] {
+    font-size: 0;
+    &:after {
+        content:'';
+        display: inline-block;
+    }
+
+    &.icon-under-arrow {
+        &:after {
+            background-image: url($urlImg + 'icon_under_arrow.png');
+            width: px(32); height: px(18);
+        }
+    }
+    // main text icon
+    &.icon-lop {
+        &:after {
+            background-image: url($urlImg + 'icon_lop.png');
+            width: px(33); height: px(34);
+            vertical-align: top;
+            margin-top: px(15);
+            margin-left: px(8);
+        }
+    }
+    &.icon-lock {
+        &:after {
+            background-image: url($urlImg + 'icon_lock.png');
+            width: px(24); height: px(29);
+            margin-right: px(8);
+            margin-left: px(4);
+        }
+    }
+    &.icon-phone {
+        &:after {
+            background-image: url($urlImg + 'icon_phone.png');
+            width: px(22); height: px(30);
+            margin-left: px(4);
+            margin-right: px(8);
+        }
+    }
+    &.icon-out {
+        &:after {
+            background-image: url($urlImg + 'icon_out.png');
+            width: px(27); height: px(31);
+            margin-left: px(4);
+            margin-right: px(8);
+        }
+    }
+    &.icon-shield {
+        &:after {
+            background-image: url($urlImg + 'icon_shield.png');
+            width: px(28); height: px(34);
+        }
+    }
+
+    // main btn icon
+    &.icon-howto {
+        position: relative;
+        &:after {
+            width: px(22); height: px(29);
+            background-image: url($urlImg + 'icon_howto.png');
+        }
+        &:hover {
+            &:after {
+                background-image: url($urlImg + 'icon_howto_on.png');
+            }
+        }
+    }
+    &.icon-download {
+        position: relative;
+        &:after {
+            width: px(24); height: px(26);
+            background-image: url($urlImg + 'icon_download.png');
+        }
+        &:hover {
+            &:after {
+                background-image: url($urlImg + 'icon_download_on.png');
+            }
+        }
+    }
+    &.icon-next {
+        position: relative;
+        &:after {
+            width: px(22); height: px(22);
+            background-image: url($urlImg + 'icon_next.png');
+        }
+        &:hover {
+            &:after {
+                background-image: url($urlImg + 'icon_next_on.png');
+            }
+        }
+    }
+
+    // main footer icon
+    &.icon-blog {
+        &::after {
+            background-image: url($urlImg + 'icon_blog.png');
+            width: px(7); height: px(8);
+        }
+    }
+    &.icon-face {
+        &::after {
+            background-image: url($urlImg + 'icon_facebook.png');
+            width: px(6); height: px(11);
+        }
+    }
+    &.icon-kakao {
+        &::after {
+            background-image: url($urlImg + 'icon_kakao.png');
+            width: px(12); height: px(11);
+        }
+    }
+    &.icon-blog-mo {
+        &::after {
+            background-image: url($urlImg + 'icon_blog_mo.png');
+            background-size: contain;
+            width: px(19); height: px(19);
+        }
+    }
+    &.icon-face-mo {
+        &::after {
+            background-image: url($urlImg + 'icon_facebook_mo.png');
+            background-size: contain;
+            width: px(19); height: px(19);
+        }
+    }
+    &.icon-kakao-mo {
+        &::after {
+            background-image: url($urlImg + 'icon_kakao_mo.png');
+            background-size: contain;
+            width: px(19); height: px(19);
+        }
+    }
+    // main cs icon
+    &.icon-cs {
+        &::after {
+            background-image: url($urlImg + 'icon_cs.png');
+            width: px(23); height: px(23);
+        }
+    }
+    &.icon-cstext {
+        &::after {
+            background-image: url($urlImg + 'icon_cstext.png');
+            width: px(90); height: px(14);
+        }
+    }
+    
+
+    // sub app icon
+    &.icon-google {
+        &::after {
+            background-image: url($urlImg + 'icon_google.png');
+            width: px(22);
+            height: px(24);
+            vertical-align: bottom;
+            margin-right: px(13);
+        }
+    }
+    &.icon-appstore {
+        &::after {
+            background-image: url($urlImg + 'icon_appstore.png');
+            width: px(25);
+            height: px(25);
+            vertical-align: top;
+            margin-right: px(10);
+        }
+    }
+    &.icon-sub-download {
+        &::after {
+            background-image: url($urlImg + 'icon_sub_download.png');
+            width: px(16);
+            height: px(17);
+            margin-top: -13px;
+            vertical-align: middle;
+            margin-left: px(10);
+        }
+    }
+
+    // sub pagination
+    &.icon-page-prev {
+        &::after {
+            vertical-align: middle;
+            margin-top: px(-10);
+            margin-right: px(3);
+            background-image: url($urlImg + 'icon_page_prev.png');
+            width: px(8); height: px(14);
+        }
+    }
+    &.icon-page-next {
+        &::after {
+            vertical-align: middle;
+            margin-top: px(-10);
+            margin-right: px(-3);
+            background-image: url($urlImg + 'icon_page_next.png');
+            width: px(8); height: px(13);
+        }
+    }
+    
+
+    // popup 
+    &.icon-close {
+        &:after {
+            background-image: url($urlImg + 'icon_close.png');
+            width: px(22); height: px(22);
+        }
+    }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="./resources/css/slick.css" />
+  <link rel="stylesheet" href="./resources/css/aos.css" />
+  <link rel="stylesheet" href="./resources/css/common.min.css" />
+  <link rel="shortcut icon" href="./resources/images/favicon.ico" />
+  <title>간편결제매니저/휴대폰간편로그인</title>
+</head>
+
+<body>
+  <div id="wrap" class="root_container">
+    <header class="hd">
+      <div class="headWrap subpage">
+        <h1 class="logo"><a href="">간편결제매니저/휴대폰간편로그인</a></h1>
+        <span class="mosubtit"></span>
+        <button type="button" class="backbtn"><i class="hide">뒤로가기</i></button>
+        <nav class="gnb">
+          <button type="button" class="btn_mo_menu" onclick="moNavAct('gnb')">
+            <i></i>
+            <i></i>
+            <i></i>
+          </button>
+          <div class="gnbwrap">
+            <div class="gnblist">
+              <ul>
+                <li class="menu">
+                  <a href="">서비스안내</a>
+                  <ul class="submenu">
+                    <li><a href="" class='active'>서비스소개</a></li>
+                    <li><a href="">가입방법</a></li>
+                    <li><a href="">이용방법</a></li>
+                    <li><a href="">해지안내</a></li>
+                  </ul>
+                </li>
+                <li class="menu">
+                  <a href="">서비스<br class="mbon" />가입/해지</a>
+                  <ul class="submenu">
+                    <li><a href="">서비스가입</a></li>
+                    <li><a href="">서비스해지</a></li>
+                  </ul>
+                </li>
+                <li class="menu">
+                  <a href="">서비스<br class="mbon" />설정</a>
+                  <ul class="submenu">
+                    <li><a href="">다운로드</a></li>
+                    <li><a href="">비밀번호재설정</a></li>
+                  </ul>
+                </li>
+                <li class="menu">
+                  <a href="">고객센터</a>
+                  <ul class="submenu">
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">1:1문의</a></li>
+                  </ul>
+                </li>
+                <li class="menu_down"><a href="">다운로드</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main_containter">
+      <div class="main_header customcenter">
+        <div class="inner">
+          <h2 class="main_title">고객센터</h2>
+          <nav class="lnb">
+            <h2 class="blind">고객센터 네비게이션 메뉴</h2>
+            <ul class="lnb_list">
+              <li class="lnb_item"><a href="#">공지사항</a></li>
+              <li class="lnb_item"><a href="#">FAQ</a></li>
+              <li class="lnb_item on"><a href="#">1:1 문의</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!--[22.12.01]cs_contact 클래스 추가-->
+      <article class="main_content cs_contact">
+        <div class="inner">
+          <div class="title_box">
+            <h3 class="title">1:1 문의</h3>
+            <p class="desc">서비스 이용 시 궁금하신 점, 불편하신 점을 보내주세요</p>
+          </div>
+          <div class="contact_fill_box">
+            <div class="fill_row">
+              <div class="fill_item">
+                <span class="fill_item_title">문의구분</span>
+              </div>
+              <div class="fill_content">
+                <div class="select_box">
+                  <select title="문의구분 선택">
+                    <option>선택해주세요</option>
+                    <option>문의항목</option>
+                    <option>문의항목</option>
+                    <option>문의항목</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="fill_row">
+              <div class="fill_item">
+                <span class="fill_item_title">이메일</span>
+              </div>
+              <div class="fill_content">
+                <input type="text" />
+                <p class="helper_text">*빠른 답변을 위해 이메일주소를 정확하게 기입해 주시기 바랍니다.</p>
+              </div>
+            </div>
+            <div class="fill_row">
+              <div class="fill_item">
+                <span class="fill_item_title">제목</span>
+              </div>
+              <div class="fill_content">
+                <input type="text" placeholder="내용을 간단히 적어주십시오." />
+              </div>
+            </div>
+            <div class="fill_row">
+              <div class="fill_item top">
+                <span class="fill_item_title">내용</span>
+              </div>
+              <div class="fill_content">
+                <textarea placeholder="내용은 150자 이내로 간단히 적어주십시오."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="privacy_agree_box">
+            <div class="chkbox">
+              <input id="userAgree" type="checkbox" class="blind" />
+              <label for="userAgree" class="chkbox_lb">
+                <span class="icon_chkbox cschk"></span>
+                <!--[22.12.07]cschk클래스추가-->
+                <span class="lb_text cschk">개인정보수집동의<s class="lb_text_desc">(이 외의 용도로는 사용되지 않습니다)</s></span>
+              </label>
+            </div>
+            <div class="detail_desc_box">
+              <p>1:1 문의게시판은 입력하신 본인 메일주소를 통해 신속한 답변을 제공하고자 고객님의 개인정보를 수집,이용하고자 합니다.</p>
+              <ul>
+                <li>- 수집항목 : E-Mail</li>
+                <li>- 수집목적: 1:1문의에 따른 본인확인 문의사항 확인 및 민원처리</li>
+                <li>- 보유기간 : 문의사항처리 후 3년간 보관 <em>(전자상거래등에서의 소비자 보호에 관한 법률)</em></li>
+              </ul>
+              <p>해당 서비스는 미성년자 및 14세 미만 이용자의 개인정보를 수집하고 있지 않습니다.</p>
+            </div>
+          </div>
+          <div class="form_submit_box">
+            <button class="btn" type="submit">1:1 문의하기</button>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="ft">
+      <div class="footer_wrap">
+        <h1 class="footer_logo"><a href="">헥토이노베이션</a></h1>
+        <div class="company">
+          <p>
+            <span>(주)헥토이노베이션</span>
+            <span>대표이사 : 이현철</span><br class="mbon" />
+            <span>사업자등록번호 : 214-88-39117 </span>
+            <span>통신판매업신고 : 2015-서울강남-00012</span><br class="mbon" />
+            <span>서울특별시 강남구 테헤란로34길 6 12, 13층</span><br class="mbon" />
+            <span>이메일 : in.help@hecto.co.kr</span>
+            <span>FAX : 02-929-4424</span>
+          </p>
+          <ul class="footer_sns">
+            <li><a href="#"><i class="hide">블로그</i></a></li>
+            <li><a href="#"><i class="hide">카카오</i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_btm_wrap">
+        <div class="footer_btm">
+          <p>Copyright© Hecto Innovation Co.,Ltd. All Rights Reserved.</p>
+          <ul class="footer_link">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li class="pointcolor"><a href="#">개인정보취급방침</a></li>
+            <li><a href="#">피싱해킹금융사기보상보험</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="resources/js/jquery-1.7.2.min.js"></script>
+  <script src="resources/js/ui.js"></script>
+</body>
+
+</html>

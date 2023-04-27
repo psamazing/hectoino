@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Content-Language" content="ko-KR">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="stylesheet" href="./resources/css/common.min.css" />
+<link rel="shortcut icon" href="./resources/image/favicon.ico" />
+<title>LOP 로그인플러스</title>
+</head>
+<body>
+<div id="wrap" class="subpage">
+    <header id="header">
+        <div class="header-wrap">
+            <div class="header">
+                <h1 class="logo pc"><a href="./main.html"><img src="./resources/image/logo.png" alt="로그인플러스"/><b>로그인플러스</b>휴대폰간편입력</a></h1>
+                <h1 class="logo mo"><a href="./main.html"><img src="./resources/image/logo_mo.png" alt="로그인플러스"/><b>로그인플러스</b>휴대폰간편입력</a></h1>
+                <button type="button" class="header-btn open" onclick="menuClick();">메뉴 열기</button>
+                <nav class="header-menu-mo">
+                    <button type="button" class="header-btn close" onclick="menuClick();">메뉴 닫기</button>
+                    <ul>
+                        <li><a href="javascript:void(0);">서비스 안내</a></li>
+                        <li>
+                            <a href="#" class="header-item">서비스 가입·<span class="warning">해지</span></a>
+                            <ul class="header-menu-mo-sub">
+                                <li><a href="./join.html">서비스 가입</a></li>
+                                <li><a href="./cancle.html">서비스 해지</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="header-item">서비스 설정</a>
+                            <ul class="header-menu-mo-sub">
+                                <li><a href="./service/login_security/howto.html">로그인 보안</a></li>
+                                <li><a href="./service/phone_simple/howto.html">휴대폰 간편입력</a></li>
+                                <li><a href="./service/phone_login/howto.html">휴대폰번호로 로그인</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="header-item">고객센터</a>
+                            <ul class="header-menu-mo-sub">
+                                <li><a href="./customer_center/notice_list.html">공지사항</a></li>
+                                <li><a href="./customer_center/faq.html">FAQ</a></li>
+                                <li><a href="./customer_center/qna.html">1:1문의하기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header-menu">
+                    <ul>
+                        <li><a href="./main.html" class="on">서비스 안내</a></li>
+                        <li>
+                            <a href="#">서비스 가입 ·<span class="warning">해지</span></a>
+                            <ul class="header-menu-sub">
+                                <li><a href="./join.html">서비스 가입</a></li>
+                                <li><a href="./cancle.html">서비스 해지</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">서비스 설정</a>
+                            <ul class="header-menu-sub">
+                                <li><a href="./service/login_security/howto.html">로그인 보안</a></li>
+                                <li><a href="./service/phone_simple/howto.html">휴대폰 간편입력</a></li>
+                                <li><a href="./service/phone_login/howto.html">휴대폰번호로<br/>로그인</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="header-menu-sub">
+                                <li><a href="./customer_center/notice_list.html">공지사항</a></li>
+                                <li><a href="./customer_center/faq.html">FAQ</a></li>
+                                <li><a href="./customer_center/qna.html">1:1문의하기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header-bg"></div>
+    </header>
+    <!-- //header -->
+
+    <div id="container">
+        <h2 class="tit">가입이 완료되었습니다.</h2>
+        <strong class="subtit">고객님의 개인정보 보호를 위한 <b>보안방식을 설정</b>해주세요.</strong>
+
+        <section class="join-result">
+            <ul class="join-result-item">
+                <li>
+                    <h2>01. 휴대폰 간편입력 설정</h2>
+                    <img src="resources/image/ico_set1.png" alt="휴대폰간편입력설정" class="ico_set1"/>
+                    <p>
+                        <strong>휴대폰간편입력</strong>
+                        PC와 MOBILE을 통해 쉽고, 빠르고 간편하게<br/>내 정보 전송 및 입력!
+                    </p>
+                    <button type="button" class="btn_setting">휴대폰간편입력 설정하기</button>
+                </li>
+                <li>
+                    <h2>02. 로그인 보안 설정</h2>
+                    <img src="resources/image/ico_set2.png" alt="로그인보안설정" class="ico_set2"/>
+                    <p>
+                        <strong>로그인보안</strong>
+                        로그인시 실시간 SMS 알림<br/>
+                        연산암호를 통한 2차 보안 로그인 제공
+                    </p>
+                    <button type="button" class="btn_setting set2">로그인 보안 설정하기</button>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="footer change-pc">
+        <div>
+            <div class="company">
+                <ul>
+                    <li><a href="" onclick="popupOpen('private', 0)">사업자 정보</a></li>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#" onclick="popupOpen('', 0)">이용약관</a></li>
+                    <li><a href="#" onclick="popupOpen('', 0)" class="point">개인정보처리방침</a></li>
+                    <li><a href="#">피싱해킹금융사기보상보험</a></li>
+                </ul>
+                <address><p>(주)헥토이노베이션</p><span>대표이사: 이현철</span><span>서울특별시 강남구 테헤란로34길 6 12,13층 </span><br/><span>사업자등록번호: 214-88-39117</span><span>통신판매업신고: 제2015-서울강남-00012호</span><span>Copyright ⓒ Hecto Innovation Co.,Ltd. All rights reserved.</span></address>
+            </div>
+            <div class="service">
+                <div class="num">
+                    <strong>고객센터</strong>
+                    <p>1599-<span class="point">3901</span></p>
+                    <span>평일 09:00~18:00<s>(주말 및 공휴일 휴무)</s></span>
+                </div>
+                <ul class="info">
+                    <li>E-mail:in.help@hecto.co.kr</li>
+                    <li>FAX: 02-929-4424</li>
+                </ul>
+                <ul class="link">
+                    <li><a href="#"><i class="icon-blog">블로그</i>공식 블로그</a></li>
+                    <li><a href="#"><i class="icon-face">페이스북</i>공식 페이스북</a></li>
+                    <li><a href="#"><i class="icon-kakao">카카오톡</i>카카오톡 상담</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer-mo change-mo">
+        <ul class="list">
+            <li><a href="#">사업자정보</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#"><b>개인정보처리방침</b></a></li>
+            <li><a href="javascript:void(0);" class="footer-slider">고객센터<i class="icon-arrow"></i></a></li>
+            <li><a href="#">피싱해킹금융사기보상보험</a></li>
+        </ul>
+        <ul class="call">
+            <li class="number">1599-<span class="point">3901</span></li>
+            <li>
+                평일 09:00~18:00 (주말 및 공휴일 휴무)<br/>E-mail: in.help@hecto.co.kr<i class="icon-line"></i>FAX: 02-929-4424
+            </li>
+
+            <ul class="link">
+                <li><a href="#"><i class="icon-blog-mo">블로그</i>공식 블로그</a></li>
+                <li><a href="#"><i class="icon-face-mo">페이스북</i>공식 페이스북</a></li>
+                <li><a href="#"><i class="icon-kakao-mo">카카오톡</i>카카오톡 상담</a></li>
+            </ul>
+        </ul>
+        <p><b>㈜헥토이노베이션</b>대표이사: 이현철<i class="icon-line"></i>서울특별시 강남구 테헤란로34길6 12,13층 사업자등록번호: 214-8-39117 <i class="icon-line"></i>통신판매업신고: 제2015-서울 강남-00012호<s>Copyright ⓒ Hecto Innovation Co.,Ltd. All rights reserved.</s></p>
+    </footer>
+</div>
+
+<script src="./resources/js/jquery-1.12.4.min.js"></script>
+<script src="./resources/js/TweenMax.min.js"></script>
+<script src="../global/resources/js/global.js"></script>
+<script src="./resources/js/ui.js"></script>
+<script>
+$(function() {
+});
+</script>
+</body>
+</html>

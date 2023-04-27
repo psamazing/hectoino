@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #222;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.8px;
+      }
+    </style>
+  </defs>
+  <g id="Icon_새로고침" transform="translate(-20 4)">
+    <rect id="Bounds" class="cls-1" width="28" height="28" transform="translate(20 -4)"/>
+    <g id="그룹_801" data-name="그룹 801" transform="translate(25 -0.612)">
+      <path id="패스_674" data-name="패스 674" class="cls-2" d="M316.161,411.546a9,9,0,1,0,2.127-5.812" transform="translate(-316.161 -400.934)"/>
+      <path id="패스_675" data-name="패스 675" class="cls-2" d="M328.431,400.683l-.254,4.758,5,.242" transform="translate(-327.176 -399.071)"/>
+    </g>
+  </g>
+</svg>

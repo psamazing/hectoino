@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ko" class="_full mobile">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Content-Language" content="ko">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link href="resources/css/common.css" media="screen" rel="stylesheet"/>
+<link href="resources/css/content.css" media="screen" rel="stylesheet"/>
+<link href="resources/css/apt_info.css" media="screen" rel="stylesheet"/>
+<link href="resources/css/swiper.min.css" media="screen" rel="stylesheet"/>	
+<title>아파트청약케어</title>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<header id="header" class="off">
+		<div class="innerWrap">
+			<h1 class="m_logo"><a href="main.html"><img src="resources/images/m_logo_apt.png" alt="logo_아파트청약케어"></a></h1>
+			<nav class="allMenuWrap">
+				<div class="menus">
+					<ul>
+						<li>
+							<a class="on" href="#">아파트 정보</a>
+							<div class="sub_menus">
+								<ul>
+									<li><a href="filter.html">아파트 정보</a></li>
+									<li><a href="recommend.html">아파트 추천</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">청약 정보</a>
+							<div class="sub_menus">
+								<ul>
+									<li><a href="sale_list.html">아파트 청약정보</a></li>
+									<li><a href="point_calculator.html">청약 가점계산기</a></li>
+									<li><a href="point_percent.html">청약 당첨 예상</a></li>
+									<li><a href="cost_calculator.html">청약 비용계산기</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">부동산계산기</a>
+							<div class="sub_menus">
+								<ul>
+									<li><a href="apt_calculator.html">부동산계산기</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">부동산 정보</a>
+							<div class="sub_menus">
+								<ul>
+									<li><a href="apt_news.html">부동산 뉴스</a></li>
+									<li><a href="#">부동산 정책</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="menus user">
+					<ul>
+						<li>
+							<a href="#">고객센터</a>
+							<div class="sub_menus">
+								<ul>
+									<li><a href="notice.html">공지사항</a></li>
+									<li><a href="faq.html">FAQ</a></li>
+									<li><a href="#">1:1문의</a></li>
+									<li><a href="close.html">서비스해지</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="login.html">로그인</a></li>
+						<li><a href="join.html">회원가입</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	
+	<!--[2022-04-01] web mobile용 컨텐츠추가 -->
+	<div id="m_content">
+		<section id="sec0" class="section intro">
+			<div class="interval">
+                <div class="txtWrap">
+                    <h2 class="tit">모두를 위한 프롭테크<br><strong class="mont">SERVICE</strong></h2>
+                    <p>청약당첨예상부터 아파트추천까지<br>내 집 마련의 꿈 아파트 청약케어에서 이루세요.</p>
+                </div>
+                <div class="movebottom">
+					<div class="arrow">
+						<span class="arrow-line"></span>
+					  </div>
+				</div>
+				
+            </div>
+		</section>
+		<section id="sec1" class="section used">
+			<div class="interval visual">
+				<div class="swiper-container visualSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide firstslide">
+							<div class="vs-txt">
+								<h2 class="tit">주택 청약 당첨가능성 확인</h2>
+								<p>청약 당첨 가능성, 주변 입지 정보 등을 제공하여<br/>청약 신청의 용이성을 증가시킵니다.</p>
+							</div>
+							
+							<span class="bg_txt">01</span>
+							<div class="vs-bg bg1">
+								<img src="resources/images/bn_m_service1.png" alt="청약당첨예상"/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="vs-txt">
+								<h2 class="tit">청약 당첨 전/후 비용정보 확인</h2>
+								<p>청약 당첨 전/후 계약금, 중도금, 잔금과 같은 비용<br/>안내로 계약 시 발생하는 피해를 최소화 시킵니다.</p>
+							</div>
+							<span class="bg_txt">02</span>
+							<div class="vs-bg">
+								<img src="resources/images/bn_m_service2.png" alt="청약비용계산기"/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="vs-txt">
+								<h2 class="tit">나에게 딱 맞는 아파트 추천받기</h2>
+								<p>아파트 실거래가와 사용자 정보를 매칭하여<br/>맞춤 추천 서비스를 제공합니다.</p>
+							</div>
+							<span class="bg_txt">03</span>
+							<div class="vs-bg">
+								<img src="resources/images/bn_m_service3.png" alt="아파트추천"/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="vs-txt">
+								<h2 class="tit">아파트 실거래 정보 확인</h2>
+								<p>매일 업데이트 되는 아파트 실거래가를 제공하여<br/>매물 확인의 정확성을 제공합니다. </p>
+							</div>
+							<span class="bg_txt">04</span>
+							<div class="vs-bg">
+								<img src="resources/images/bn_m_service4.png" alt="아파트실거래가"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="sec2" class="section join">
+			<div class="interval">
+                <div class="tabWrap">
+                    <div class="tabList">
+                        <ul class="col">
+                            <li><a href="#n" class="tabBtn btn1 now" onclick="joinTab(1)">가입</a></li>
+                            <li><a href="#n" class="tabBtn btn2" onclick="joinTab(2)">해지</a></li>
+                        </ul>
+                    </div>
+                    <div class="tabMenu">
+						<!--가입-->
+                        <section id="tab1" class="tabSec tabOn">
+                            <div class="joinTxtWrap" id="tabTxt1">
+                                <h2 class="tit mont">SERVICE<br><strong>JOIN</strong></h2>
+                                <strong class="stress">청약당첨가능성 확인 및 아파트 추천 받기</strong>
+                                <ul class="list plus">
+                                    <li><span>* 부가세포함 월 3,300원의 이용료가 발생합니다.</span></li>
+                                </ul>
+                            </div>
+                           
+                            <div class="formWrap">
+								<!--통신사 선택-->
+								<div class="chkWrap choice checking">
+									<button type="button" class="skt on"><i class="hide">SKT</i></button>
+									<button type="button" class="kt"><i class="hide">KT</i></button>
+									<button type="button" class="lgu"><i class="hide">LGU+</i></button>
+								</div>
+								<!--KT,lg입력폼-->
+								<div class="cvType2">
+									<div class="ip_terms_wrap">
+										<!--휴대폰번호입력-->
+										<div class="ip_terms tel">
+											<input type="tel" id="tel" maxlength="11" required>
+											<label for="tel">휴대폰번호 입력</label>
+											<button type="button" class="btn_right confirm disabled">인증번호요청</button>
+										</div>
+										
+										<button class="termsBtn"><img src="resources/images/ico_hidebtn.png" alt="약관숨기기"></button>
+										<!--약관선택-->
+										<div class="form_terms">
+											<ul class="all_list">
+												<li class="all">
+													<span class="checkbox i_all">
+														<input type="checkbox" name="allCheck" id="allCheck" value="" />
+														<label for="allCheck"><i></i>모두 동의</label>
+													</span>
+												</li>
+											</ul>
+											<ul class="item_list">
+												<li>
+													<span class="checkbox i_sub">
+														<input type="checkbox" id="terms01"/>
+														<label for="terms01"><i></i></label>
+														<a href="#">서비스약관</a>
+													</span>
+												</li>
+												<li>
+													<span class="checkbox i_sub">
+														<input type="checkbox" id="terms02" />
+														<label for="terms02"><i></i></label>
+														<a href="#">개인정보 수집 및 이용</a>
+													</span>
+												</li>
+												<li>
+													<span class="checkbox i_sub">
+														<input type="checkbox" id="terms03" />
+														<label for="terms03"><i></i></label>
+														<a href="#">제3자제공</a>
+													</span>
+												</li>
+												<li>
+													<span class="checkbox i_sub">
+														<input type="checkbox" id="terms04" />
+														<label for="terms04"><i></i></label>
+														<a href="#">마케팅활용동의(선택)</a>
+													</span>
+												</li>
+												<li>
+													<span class="checkbox i_sub">
+														<input type="checkbox" id="terms05" />
+														<label for="terms05"><i></i></label>
+														<a href="#">마케팅수신동의(선택)</a>
+													</span>
+												</li>
+											</ul>
+										</div>
+										<!-- 
+											input이 disabled될때
+											ip_terms에 class="disabled" 추가 
+										-->
+										<div class="ip_terms hide code6">
+											<input type="text" id="confirm" maxlength="11" required>
+											<label for="confirm">인증번호 6자리 입력</label>
+											<div class="ip_item">
+												<i class="time">03:00</i>
+												<button type="button" class="btn_resend">재발송</button>
+											</div>
+										</div>
+									
+										<div class="ip_terms captcha hide">
+											<div class="captcha_img">
+												<img src="resources/images/sample_captcha.png" alt="">
+												<button class="refresh"></button>
+											</div>
+											<div class="captcha_ip">
+												<input type="text" id="confirm" required>
+												<label for="confirm">보안문자 입력</label>
+												<div class="ip_item ">
+													<button type="button" class="btn_resend disabled">다음</button>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+                            	</div>
+
+								<!--skt입력폼-->
+								<div class="cvType2 type_skt"  style="display: none;">
+									<div class="ip_terms_wrap">
+										<div class="ip_terms">
+											<input type="text" id="confirm" maxlength="11" required>
+											<label for="confirm">인증번호 6자리 입력</label>
+											<div class="ip_item ">
+												<i class="time">03:00</i>
+												<button type="button" class="btn_resend disabled">재발송</button>
+											</div>
+										</div>
+										
+										<div class="ip_terms captcha">
+											<div class="captcha_img">
+												<img src="data:image/png;base64,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" alt="">
+												<button class="refresh"></button>
+											</div>
+											<div class="captcha_ip">
+												<input type="text" id="confirm" required>
+												<label for="confirm">보안문자 입력</label>
+												<div class="ip_item ">
+													<button type="button" class="btn_resend disabled">다음</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!--인증번호 확인-->
+								<!-- <button type="button" class="btn_wide2 confirmCheck disabled">인증번호 확인</button> -->
+							
+								<!-- 하단 submit 버튼 -->
+								<div class="submit_form">
+									<a href="#n" class="btn_wide2 ip_btn target disabled">아파트청약케어 유료가입하기</a>
+									<!--<ul class="col">
+										<li><a href="#n" class="ip_btn gray">취소</a></li>
+										<li><a href="#n" class="btn_wide2 ip_btn target disabled"></a></li>
+									</ul>-->
+									<small>매월 3,300원 (부가세포함)의 유료서비스로<br>사용 일 수 만큼 일할 계산되어 과금됩니다.</small>
+								</div>
+
+							</div>
+                        </section>
+						<!--//가입-->
+
+						<!--해지-->
+						<section id="tab2" class="tabSec">
+							<div class="joinTxtWrap" id="tabTxt2">
+                                <h2 class="tit mont">SERVICE<br><strong>EXPIRE</strong></h2>
+                                <strong class="stress">서비스 해지 유의사항</strong>
+                                <ul class="list2">
+                                    <li>서비스 해지 시 아파트 청약케어의 프리미엄 서비스 이용이 불가합니다.</li>
+                                    <li>아파트청약케어는 월 3,300원(부가세포함)의 유료서비스로, 사용일 수 만큼 계산되어 과금됩니다.</li>
+                                </ul>
+                            </div>
+							<div class="formWrap">
+								<!--통신사 선택-->
+								<!--[22.04.07]choice2 클래스 추가-->
+								<div class="chkWrap choice2 checking">
+									<!--[22.04.07] skt2,kt2,lgu2 클래스 추가-->
+									<button type="button" class="skt2 on"><i class="hide">SKT</i></button>
+									<button type="button" class="kt2"><i class="hide">KT</i></button>
+									<button type="button" class="lgu2"><i class="hide">LGU+</i></button>
+								</div>
+								<!--KT,lg입력폼-->
+								<!--[22.04.07]cvType_expire 클래스 추가-->
+								<div class="cvType_expire">
+									<div class="ip_terms_wrap">
+										<!--휴대폰번호입력-->
+										<div class="ip_terms tel">
+											<input type="tel" id="tel" maxlength="11" required>
+											<label for="tel">휴대폰번호 입력</label>
+											<!--인증번호 확인-->
+											<!--[22.04.07]confirmCheck_expire 클래스 추가-->
+											<button type="button" class="btn_right confirm_expire disabled">인증번호 요청</button>
+										</div>
+										<div class="ip_terms hide code6">
+											<input type="text" id="confirm" class="ip_confirm"  maxlength="11" required>
+											<label for="confirm">인증번호 6자리 입력</label>
+											<div class="ip_item">
+												<i class="time">03:00</i>
+												<!--[22.04.07]btn_resend_expire 클래스 추가-->
+												<button type="button" class="btn_resend_expire">재발송</button>
+											</div>
+										</div>
+										<div class="ip_terms captcha hide">
+											<div class="captcha_img">
+												<img src="data:image/png;base64,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" alt="">
+												<button class="refresh"></button>
+											</div>
+											<div class="captcha_ip">
+												<input type="text" id="confirm"  class="ip_confirm" required>
+												<label for="confirm">보안문자 입력</label>
+												<div class="ip_item ">
+													<button type="button" class="btn_resend_expire disabled">다음</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>	
+								<!--skt입력폼-->
+								<!--[22.04.07]cvType_expire 클래스 추가-->
+								<div class="cvType_expire type_skt"  style="display: none;">
+									<div class="ip_terms_wrap">
+										<div class="ip_terms">
+											<input type="text" id="confirm" class="ip_confirm" maxlength="11" required>
+											<label for="confirm">인증번호 6자리 입력</label>
+											<div class="ip_item ">
+												<i class="time">03:00</i>
+												<!--[22.04.07]btn_resend_expire 클래스 추가-->
+												<button type="button" class="btn_resend_expire disabled">재발송</button>
+											</div>
+										</div>
+										<div class="ip_terms captcha">
+											<div class="captcha_img">
+												<img src="data:image/png;base64,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"  alt="">
+												<button class="refresh"></button>
+											</div>
+											<div class="captcha_ip">
+												<input type="text" id="confirm"  class="ip_confirm" required>
+												<label for="confirm">보안문자 입력</label>
+												<div class="ip_item ">
+													<button type="button" class="btn_resend_expire disabled">다음</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>	
+								<!-- 하단 submit 버튼 -->
+								<div class="submit_form expire">
+									<a href="#n" class="ip_btn target2 disabled">아파트청약케어 해지</a>
+									<small>매월 3,300원 (부가세포함)의 유료서비스로<br>사용 일 수 만큼 일할 계산되어 과금됩니다.</small>
+								</div>
+							</div>
+						</section>
+						<!--//해지-->
+                    </div>
+                </div>
+            </div>
+			<strong id="liTelcoFooter">본 서비스는 가입 즉시 서비스가 개시되는 상품으로 청약철회가 불가능 합니다.<br/>
+				(전자상거래 등에서의 소비자 보호에 관한 법률 제17조 2항 5호에 따라 디지털 콘텐츠의 제공이 개시된 경우 청약철회를 제공하지 않습니다)</strong>
+		</section>
+		<section id="sec3" class="section contract">
+			<div class="ask_wrap">
+				<div class="txtWrap interval">
+					<span class="smTit">아파트청약케어 서비스 문의</span>
+					<strong class="call">1599-2985</strong>
+					<small class="work">평일 9시~18시 주말, 휴일 휴무</small>
+				</div>
+			</div>
+			<footer class="global_footer">
+				<div class="interval">
+					<div class="footWrap">
+						<div class="doc">
+							<span><a href="#n">서비스 이용약관</a></span>
+							<span><a href="#n">개인정보 처리방침</a></span>
+							<span><button type="button" onclick="popupOpen('cpinfo','pc')" class="btn_info">(주) 민앤지 사업자 정보</button></span>
+						</div>
+						<div class="company">
+							<p>
+								<span>(주)민앤지</span>
+								<span>대표이사 이현철</span>
+								<span>사업자등록번호 214-88-39117</span>
+								<span>통신판매업신고 2015-서울강남-00012</span>
+								<span>서울특별시 강남구 테헤란로34길 6 12, 13층</span>
+								<span>E-mail minwise.help@minwise.co.kr</span><br class="mOn">
+								<span>대표번호 1599-7052</span>
+								<span>FAX 02-929-4424</span>
+								<span>Copyright © Minwise Co.,Ltd. All rights reserved.</span></p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+		<!--앱다운로드버튼-->
+		<a href="#" class="appdown"><span>앱으로 이용하기</span></a>
+		<!--위로가기버튼-->
+		<a href="#" class="gotop" onclick="goToTop();"></a>
+	</div>	
+	<!--//m_content-->
+
+	<!-- [2021-03-16 footer 추가] -->
+    <!-- [2021-04-08 footer 구조변경] -->
+    <!-- [2021-05-14 footer class 추가 "icon_footer"] -->
+    <footer id="footer" class="icon_footer">
+        <div class="inner_wrap">
+            <button type="button" class="btn_gotop" style="display:none">상단으로 바로가기</button><!-- display:none추가 -->
+            <ul class="link_wrap">
+                <li><button type="button" class="btn_link">서비스 이용약관</button></li>
+                <li><button type="button" class="btn_link">개인정보 처리방침</button></li>
+                <li><button type="button" class="btn_link btn_info">(주) 헥토이노베이션 사업자 정보</button></li>
+            </ul>
+            <ul class="txt_wrap">
+                <li>(주)헥토이노베이션</li>
+                <li>대표이사  이현철</li>
+                <li>사업자등록번호  214-88-39117 </li>
+                <li>통신판매업신고  2015-서울강남-00012</li>
+                <li>서울특별시 강남구 테헤란로 34길6, 태광타워 12, 13층</li>
+                <li class="clear">고객센터 1599-2985</li>
+                <li>E-mail  in.help@hecto.co.kr</li>
+                <li>FAX  02-929-4424</li>
+                <li>Copyright ⓒ Hecto Innovation Co.,Ltd.  All rights reserved.</li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+</body>
+<!-- [2021-10-14] google 스크립트 삭제 -->
+<script src="resources/js/jquery-1.12.4.min.js"></script>
+<script src="resources/js/design.js"></script>
+<script src="resources/js/ui.js"></script>
+<script src="resources/js/swiper.min.js"></script>
+<script>
+$(function() {
+
+		
+		//모바일웹 공지팝업
+		//popupOpen('notice','mw');
+
+		if($("html").hasClass("mobile")){
+			mainMbScroll();
+			setTimeout(function () {
+            $('.intro').addClass('aniMo');
+       		 }, 100);
+			//popupClose('main','mw');
+				
+			//유료가입하기 버튼 클릭
+			$('.target').on('click',function(){
+				$('#joinPop').addClass('popShow');
+			});
+			//유료가입하기 닫기
+			$('.joinpopclose').on('click',function(){
+				$('#joinPop').removeClass('popShow');
+				$('html,body').animate({ scrollTop: $('#sec1').offset().top }, 350);
+			});
+			//해지하기 버튼 클릭
+			$('.target2').on('click',function(){
+				$('#expirePop').addClass('popShow');
+			});
+			//유료가입하기 닫기
+			$('.expopclose').on('click',function(){
+				$('#expirePop').removeClass('popShow');
+				$('html,body').animate({ scrollTop: $('#sec0').offset().top }, 350);
+			});
+
+		}else{
+			//popupOpen('main','pc');
+		}
+
+		//인증번호 입력 & 모두동의선택시 다음버튼활성화  
+		$('#allCheck').on('change', function(){
+			if ($(this).prop('checked')){
+				$('.confirm').removeClass("disabled");
+			}else{
+				$('.confirm').addClass("disabled");
+			}
+		});
+
+		$('.ip_terms #confirm').on('input change', function () {
+			if ($(this).val() != '') {
+				$('.target').removeClass("disabled");
+			}
+			else {
+				$('.target').addClass("disabled");
+			}
+		});	
+		$('.ip_terms.tel > input').on('input change', function () {
+			if ($(this).val() != '') {
+				$('.btn_right').removeClass("disabled");
+			}
+			else {
+				$('.btn_right').addClass("disabled");
+			}
+		});
+		$('.ip_confirm').on('input change', function () {
+			if ($(this).val() != '') {
+				$('.target2').removeClass("disabled");
+			}
+			else {
+				$('.target2').addClass("disabled");
+			}
+		});
+
+
+		footImportPop('../global/footer/apt/popup_win.html',400,600);
+		
+		// 맵마커추가
+		$(".map_marker_icon").on('click', function() {
+			$(this).toggleClass('_active');
+		});
+		
+		
+		// [2022.01.04] 해시태그 가로 스크롤
+		$(".hashtag").mCustomScrollbar({
+			axis:"x",
+			theme:"minimal"
+		});
+	});
+</script>
+</html>

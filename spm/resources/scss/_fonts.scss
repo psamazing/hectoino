@@ -1,0 +1,46 @@
+// Pretendard
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 200;
+  font-style: normal;
+  src: url('../fonts/Pretendard/Pretendard-ExtraLight.woff2') format('woff2'),
+    url('../fonts/Pretendard/Pretendard-ExtraLight.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/Pretendard/Pretendard-Light.woff2') format('woff2'),
+    url('../fonts/Pretendard/Pretendard-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Pretendard/Pretendard-Regular.woff2') format('woff2'),
+    url('../fonts/Pretendard/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../fonts/Pretendard/Pretendard-Medium.woff2') format('woff2'),
+    url('../fonts/Pretendard/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-style: normal;
+  src: url('../fonts/Pretendard/Pretendard-SemiBold.woff2') format('woff2'),
+    url('../fonts/Pretendard/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/Pretendard/Pretendard-Bold.woff2') format('woff2'),
+    url('../fonts/Pretendard/Pretendard-Bold.woff') format('woff');
+}
+
+//Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');

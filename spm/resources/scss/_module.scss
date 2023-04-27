@@ -1,0 +1,130 @@
+$baseFontSize: 10;
+@function px($pixels, $context: $baseFontSize) {
+  @return ($pixels) / $context * 1rem;
+}
+
+@function pxm($px, $context: $baseFontSize) {
+  @return ($px / 2) / $context * 1rem;
+}
+
+$urlImg: '../images/';
+
+// common
+@mixin blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@mixin clear {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin wfp {
+  font-family: 'Pretendard', Sans-serif;
+}
+
+@mixin wfr {
+  font-family: 'Roboto', Sans-serif;
+}
+
+@mixin bgf($ps: false, $v: null) {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  color: transparent;
+  white-space: nowrap;
+  text-indent: -1000rem;
+  font-size: 1px;
+  @if $ps {
+    background-size: $v auto;
+  } @else {
+    background-size: 100% 100%;
+  }
+}
+
+@mixin svgfill($c: null, $img: null) {
+  background-color: $c;
+  mask: url($urlImg + $img) no-repeat 0 0;
+}
+
+@mixin elip($ty) {
+  line-height: 1.35;
+  @if $ty == 'l1' {
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    max-width: 100%;
+  } @else if $ty == 'l2' {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+  }
+}
+
+@mixin checkbox {
+  display: inline-block;
+  position: relative;
+  input {
+    @include blind;
+  }
+  input + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}
+
+// media
+@mixin mq($screen-width) {
+  @if $screen-width == 'small' {
+    @media all and (max-width: 320px) {
+      @content;
+    }
+  } @else if $screen-width == 'fold' {
+    @media all and (min-width: 640px) {
+      @content;
+    }
+  }
+}
+
+@mixin loading($style: null, $w: null, $h: null, $st: null, $c: null) {
+  display: inline-block;
+  @if $style == 'circle' {
+    @keyframes ball-clip-rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    width: $w;
+    height: $h;
+    border-radius: 100%;
+    border: 0 solid $c;
+    border-bottom-color: transparent;
+    border-width: $st;
+    animation: ball-clip-rotate 0.75s linear infinite;
+  }
+}

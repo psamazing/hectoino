@@ -1,0 +1,289 @@
+@keyframes morph{
+    0%,100%{
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+        transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+        transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+        transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+}
+@keyframes morph01{
+    0%,100%{
+        border-radius: 42% 30% 50% 30% / 45% 15% 55% 55%;
+        transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 42% 40% 70% 40%/65% 25% 55% 35%;
+        transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+        transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    80%{
+        border-radius: 20% 30% 40% 20% / 45% 15% 55% 55%;
+        transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+}
+@keyframes morph02{
+    0%,100%{
+        border-radius: 42% 77% 50% 72% / 45% 95% 62% 80%;
+        transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 42% 40% 70% 40% / 65% 45% 65% 45%;
+        transform:  translate3d(0,-5px,0) rotateZ(0.01deg);
+    }
+    50%{
+        transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    80%{
+        border-radius: 42% 62% 60% 75% / 45% 75% 30% 53%;
+        transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+}
+
+@keyframes bounce {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    20% {
+      transform: translate3d(0, -5px, 0);
+    }
+    100%,
+    40% {
+      transform: translate3d(0, 0, 0);
+    }
+   
+}
+@keyframes wave-front {
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes wave-back {
+    100% {
+        transform: translate(50%, 0);
+    }
+}
+
+@keyframes wave {
+    0%{
+        transform: translate(0, 108%);
+    }
+    100% {
+        transform: translate(0, 0%);
+    }
+}
+
+@keyframes typing {
+    from { width:0}
+    to { width:px(34) }
+}
+@keyframes typing02{
+    from { width:0}
+    to { width:px(162) }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #15BEB9; }
+}
+
+
+   /* main visual text up */
+@-webkit-keyframes textAni {
+	0% {
+		opacity:0;
+		transform:translateY(100%);
+	}
+	100% {
+		opacity:1;
+		transform:translateY(0);
+	}
+}
+@-moz-keyframes textAni {
+	0% {
+		opacity:0;
+		transform:translateY(100%);
+	}
+	100% {
+		opacity:1;
+		transform:translateY(0);
+	}
+}
+@-ms-keyframes textAni {
+	0% {
+		opacity:0;
+		transform:translateY(100%);
+	}
+	100% {
+		opacity:1;
+		transform:translateY(0);
+	}
+}
+@-o-keyframes textAni {
+	0% {
+		opacity:0;
+		transform:translateY(100%);
+	}
+	100% {
+		opacity:1;
+		transform:translateY(0);
+	}
+}
+@keyframes textAni {
+	0% {
+		opacity:0;
+		transform:translateY(100%);
+	}
+	100% {
+		opacity:1;
+		transform:translateY(0);
+	}
+}
+
+
+@-webkit-keyframes scroll1Anime {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  20% {
+    height: 0;
+    opacity: 1;
+  }
+  80% {
+    height:64px;
+    opacity: 1;
+  }
+  100% {
+    height:64px;
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes scroll1Anime {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  20% {
+    height: 0;
+    opacity: 1;
+  }
+  80% {
+    height:64px;
+    opacity: 1;
+  }
+  100% {
+    height:64px;
+    opacity: 0;
+  }
+}
+
+@-o-keyframes scroll1Anime {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  20% {
+    height: 0;
+    opacity: 1;
+  }
+  80% {
+    height:64px;
+    opacity: 1;
+  }
+  100% {
+    height:64px;
+    opacity: 0;
+  }
+}
+@keyframes scroll1Anime {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  20% {
+    height: 0;
+    opacity: 1;
+  }
+  80% {
+    height:64px;
+    opacity: 1;
+  }
+  100% {
+    height:64px;
+    opacity: 0;
+  }
+}
+
+
+@-webkit-keyframes scroll2Anime {
+  0% {
+    top:66px;
+    opacity: 0;
+  }
+  20% {
+    top:66px;
+    opacity: 1;
+  }
+  80% {
+    top: 0px;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+
+
+@keyframes scroll2Anime {
+  0% {
+    top:66px;
+    opacity: 0;
+  }
+  20% {
+    top:66px;
+    opacity: 1;
+  }
+  80% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+
+
+@-webkit-keyframes arrow {
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+    transform-origin: bottom;
+  }
+}
+
+@keyframes arrow {
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+    transform-origin: bottom;
+  }
+}
